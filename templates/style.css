@@ -1,0 +1,107 @@
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.nav_bar {
+    text-align: right;
+    margin-top: 100px;
+
+}
+
+.nav_bar a {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding-left: 10px;
+    color: black;
+    font-weight: 600;
+    
+}
+
+.cabecalho {
+    background-image: url("./assets/brooke-lark-1Rm9GLHV0UA-unsplash.jpg");
+    background-size: cover;
+    height: 600px;
+    margin-top: 70px;
+}
+
+.substitutos h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 25px;
+    margin: 8% 0;
+}
+
+.substitutos img {
+    height: 573px;
+}
+
+.receitas_rapidas {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.receitas_rapidas h2 {
+    margin: 15% 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.receitas_rapidas img {
+    max-height: 400px;
+}
+
+.doces_salgadas {
+    display: flex;
+    
+}
+
+.doces_salgadas p {
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 0 auto;
+    margin-top: 20%;
+    font-weight: 600;
+}
+
+.documentary {
+    display: flex;
+}
+
+.documentary img {
+    width: 200px;
+    padding: 0 10px;
+    margin: auto;
+}
+
+.dicas {
+    text-align: right;
+    text-transform: uppercase;
+    margin: 10% 0;
+}
+
+.dicas h2{
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 2.5em;
+ 
+}
+
+footer h3 {
+    text-align: center;
+}
+
+.background {
+    background-color: rgb(68, 68, 68);
+    padding: 5% 0;
+    color: #ffffff;
+    margin-top: 10%;
+}
+
