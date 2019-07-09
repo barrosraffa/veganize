@@ -1,8 +1,10 @@
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0 auto;
     width: 100%;
-}
+    background-color: #f1efe9;
+    line-height: 1;
+} 
 
 
 .container {
@@ -10,10 +12,51 @@ body {
     margin: 0 auto;
 }
 
-.nav_bar {
-    text-align: right;
-    margin-top: 100px;
 
+@media(max-width: 960px){
+    .container {
+        width: 960px;
+    }
+}
+
+.transition {
+    transition: all 3s;
+}
+
+.box::before {
+    content: '';
+    display: inline-flex;
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    z-index: -1;
+    background-color: #d4c6e6;
+    transition: all .3s;
+    margin: o auto;
+    left: 40%;
+}
+
+.box:hover:before{
+    width: 500px;
+    
+}
+
+.nav_bar {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.nav_bar a:hover{
+    width: 100px;
+    height: 400px;
+    background-color: #d4c6e6;
+    font-weight: 600;
+}
+
+@media(max-width: 960px){
+.nav_bar a {
+    padding-left: 10%;
+}
 }
 
 .nav_bar a {
@@ -21,26 +64,48 @@ body {
     text-transform: uppercase;
     padding-left: 10px;
     color: black;
-    font-weight: 600;
+    font-weight: 300;
     
 }
 
 .cabecalho {
     background-image: url("./assets/brooke-lark-1Rm9GLHV0UA-unsplash.jpg");
     background-size: cover;
-    height: 600px;
+    height: 500px;
     margin-top: 70px;
+    box-shadow: 10px 15px 35px -5px rgba(0,0,0,.25);
 }
+
+.cabecalho:after::before{
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    pointer-events: none;
+} 
 
 .substitutos h1{
     text-transform: uppercase;
     text-align: center;
-    font-size: 25px;
-    margin: 8% 0;
+    font-size: 35px;
+    margin: 12% 0;
+    cursor: pointer;
 }
 
 .substitutos img {
     height: 573px;
+} 
+
+@media(max-width: 960px){
+    .substitutos img {
+        height: 400px;
+    }
 }
 
 .receitas_rapidas {
@@ -52,6 +117,7 @@ body {
     margin: 15% 0;
     text-align: center;
     text-transform: uppercase;
+  
 }
 
 .receitas_rapidas img {
@@ -60,7 +126,6 @@ body {
 
 .doces_salgadas {
     display: flex;
-    
 }
 
 .doces_salgadas p {
@@ -69,6 +134,10 @@ body {
     margin: 0 auto;
     margin-top: 20%;
     font-weight: 600;
+}
+
+.receitas_escondidas ul {
+    list-style-type: none;
 }
 
 .documentary {
@@ -82,17 +151,31 @@ body {
 }
 
 .dicas {
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     margin: 10% 0;
 }
 
 .dicas h2{
-    text-align: right;
+    text-align: center;
     text-transform: uppercase;
     font-size: 2.5em;
  
 }
+
+.zoom img {
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.zoom:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
 
 footer h3 {
     text-align: center;
@@ -103,5 +186,10 @@ footer h3 {
     padding: 5% 0;
     color: #ffffff;
     margin-top: 10%;
-}
+} 
 
+
+    .zoom {
+        overflow: hidden;
+    } 
+    

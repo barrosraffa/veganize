@@ -1,0 +1,28 @@
+.receitas_rapidas {
+    width: 70%;
+    margin: 0 auto;
+
+    h2 {
+        margin: 15% 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    img {
+        max-height: 400px;
+    }
+}
+
+.doces_salgadas {
+    display: flex;
+
+    p {
+        text-transform: uppercase;
+        font-size: 30px;
+        margin: 0 auto;
+        margin-top: 20%;
+        font-weight: 600;
+    }
+}
+
+

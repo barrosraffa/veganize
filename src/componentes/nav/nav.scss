@@ -1,0 +1,27 @@
+.nav_bar {
+    text-align: center;
+    margin-top: 100px;
+
+    a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 0 10px;
+        color: black;
+        font-weight: 300;
+        
+    }
+
+    a:hover{
+        width: 100px;
+        height: 400px;
+        background-color: #d4c6e6;
+        font-weight: 600;
+    }
+}
+
+
+@media(max-width: 960px){
+.nav_bar a {
+    padding-left: 10%;
+}
+}
