@@ -10,7 +10,7 @@ class Dicas extends Component {
     render(){
         return(
             <section>
-                <div class="dicas">
+                <div class=" container dicas">
                     <h2>Dicas</h2>
                     <p>Documentarios sobre o tema</p>
                 </div>

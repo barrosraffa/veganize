@@ -1,5 +1,4 @@
 .receitas_rapidas {
-    width: 70%;
     margin: 0 auto;
 
     h2 {
@@ -9,7 +8,7 @@
     }
 
     img {
-        max-height: 400px;
+        max-width: 25%;
     }
 }
 
@@ -20,8 +19,15 @@
         text-transform: uppercase;
         font-size: 30px;
         margin: 0 auto;
-        margin-top: 20%;
+        margin-top: 45%;
         font-weight: 600;
+        cursor: pointer;
+    }
+
+    div {
+        width: 100%;
+        max-width: 25%;
+        text-align: center;
     }
 }
 

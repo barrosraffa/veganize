@@ -1,22 +1,22 @@
 .nav_bar {
     text-align: center;
-    margin-top: 100px;
+    display: grid;
+    margin-top: 320px;
 
     a {
         text-decoration: none;
         text-transform: uppercase;
-        padding: 0 10px;
-        color: black;
-        font-weight: 300;
-        
+        color: white;     
+        padding: 10px 0;
+        font-size: 20px   
     }
 
-    a:hover{
-        width: 100px;
-        height: 400px;
-        background-color: #d4c6e6;
-        font-weight: 600;
-    }
+    // a:hover{
+    //     width: 100px;
+    //     height: 400px;
+    //     background-color: #d4c6e6;
+    //     font-weight: 600;
+    // }
 }
 
 

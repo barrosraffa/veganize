@@ -1,9 +1,10 @@
 .cabecalho {
-    background-image: url("../../assets/brooke-lark-1Rm9GLHV0UA-unsplash.jpg");
+    background-image: url("../../assets/background.jpg");
     background-size: cover;
-    height: 500px;
-    margin-top: 70px;
+    height: 860px;
+    margin-top: -550px;
     box-shadow: 10px 15px 35px -5px rgba(0,0,0,.25);
+    width: 100%;
 
     :after::before{
         content: " ";
