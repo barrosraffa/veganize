@@ -31,10 +31,10 @@ class ReceitasRapidas extends Component {
 
     render(){
         return(
-            <section class=" container receitas_rapidas">
-                <h2>Receitas rápidas</h2>
+            <section className="container receitas_rapidas">
+                <h2 className="box" >Receitas rápidas</h2>
 
-                <div class="doces_salgadas">
+                <div className="doces_salgadas">
                     <img src={doces} alt=""/>
                     <div>
                         <p onClick={this.mostraReceitasDoces}>Doces</p>
@@ -47,23 +47,27 @@ class ReceitasRapidas extends Component {
                 </div>
 
                 {/* Receitas doces */}
-                <div className="lista_receitas">
-                    <ul className={"receitas_doces " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>
-                        <li>Linhaça</li>
-                        <li>Agar-agar</li>
-                        <li>Chia</li>
-                        <li>Polvilho</li>
-                    </ul>
+                <div className="background_receitas">
+                    <div className="lista_receitas">
+                        <ul className={"receitas_rapidas " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>
+                            <li>Linhaça</li>
+                            <li>Agar-agar</li>
+                            <li>Chia</li>
+                            <li>Polvilho</li>
+                        </ul>
+                    </div>
                 </div>
 
                 {/* Receitas salgadas */}
-                <div className="lista_receitas">
-                    <ul className={"receitas_salgadas " + (this.state.receitasSalgadas ? 'visivel' : 'escondido')}>
-                        <li>CACHORRO</li>
-                        <li>GATO</li>
-                        <li>PORCO</li>
-                        <li>VACA</li>
-                    </ul>
+                <div className="background_receitas">
+                    <div className="lista_receitas">
+                        <ul className={"receitas_rapidas " + (this.state.receitasSalgadas ? 'visivel' : 'escondido')}>
+                            <li>CACHORRO</li>
+                            <li>GATO</li>
+                            <li>PORCO</li>
+                            <li>VACA</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
         )

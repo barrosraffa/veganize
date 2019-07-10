@@ -1,0 +1,71 @@
+.box::before {
+  content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  z-index: -1;
+  background-color: #d4c6e6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin: o auto;
+  left: 40%;
+}
+
+:hover:before {
+  width: 500px;
+}
+
+.substitutos h1 {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 35px;
+  margin: 12% 0;
+  cursor: pointer;
+}
+
+.substitutos img {
+  height: 575px;
+}
+
+.substitutos_leite_ovo {
+  padding: 60px 0;
+  margin-top: -2px;
+}
+
+.substitutos_leite_ovo li {
+  list-style-type: none;
+}
+
+.background_receitas {
+  background-color: aqua;
+}
+
+.lista_receitas ul {
+  margin-left: 30px;
+}
+
+.escondido {
+  display: none;
+}
+
+.thumbnail-wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+.thumbnail-wrapper button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  font-size: 100px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=substituicao.css.map */

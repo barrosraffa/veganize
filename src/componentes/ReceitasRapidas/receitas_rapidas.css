@@ -1,0 +1,75 @@
+.box::before {
+  content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  z-index: -1;
+  background-color: #d4c6e6;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin: o auto;
+  left: 40%;
+}
+
+:hover:before {
+  width: 500px;
+}
+
+.receitas_rapidas {
+  padding: 60px 0;
+  margin-top: -2px;
+}
+
+.receitas_rapidas li {
+  list-style-type: none;
+}
+
+.background_receitas {
+  background-color: aqua;
+}
+
+.lista_receitas ul {
+  margin-left: 30px;
+}
+
+.receitas_rapidas {
+  margin: 0 auto;
+}
+
+.receitas_rapidas h2 {
+  margin: 15% 0;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 35px;
+  margin: 12% 0;
+  cursor: pointer;
+}
+
+.receitas_rapidas img {
+  max-width: 25%;
+}
+
+.doces_salgadas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.doces_salgadas p {
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0 auto;
+  margin-top: 45%;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.doces_salgadas div {
+  width: 100%;
+  max-width: 25%;
+  text-align: center;
+}
+/*# sourceMappingURL=receitas_rapidas.css.map */
