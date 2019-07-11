@@ -1,0 +1,40 @@
+.documentary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.documentary img {
+  width: 200px;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.dicas {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10% 0;
+}
+
+.dicas h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5em;
+}
+
+.zoom img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.zoom:hover img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.zoom {
+  overflow: hidden;
+}
+/*# sourceMappingURL=dicas.css.map */

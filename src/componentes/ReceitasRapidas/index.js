@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import './receitas_rapidas.scss';
 import salgadas from '../../assets/salgadas.jpg';
 import doces from '../../assets/doces.jpg';
+import ScrollableAnchor from 'react-scrollable-anchor'
+import listaReceitasDoces from "../../listaReceitasApi/listaReceitasDoces"
+import listaReceitasSalgadas from "../../listaReceitasApi/listaReceitasSalgadas"
 
 class ReceitasRapidas extends Component {
     constructor(props) {
@@ -31,7 +34,8 @@ class ReceitasRapidas extends Component {
 
     render(){
         return(
-            <section className="container receitas_rapidas">
+            <ScrollableAnchor id={'receitas'}>
+              <section className="container receitas_rapidas">
                 <h2 className="box" >Receitas rápidas</h2>
 
                 <div className="doces_salgadas">
@@ -49,11 +53,16 @@ class ReceitasRapidas extends Component {
                 {/* Receitas doces */}
                 <div className="background_receitas">
                     <div className="lista_receitas">
-                        <ul className={"receitas_rapidas " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>
-                            <li>Linhaça</li>
-                            <li>Agar-agar</li>
-                            <li>Chia</li>
-                            <li>Polvilho</li>
+                        <ul className={"receitas_rapidas " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>        
+                             {
+                            listaReceitasDoces.map(function (receita) {
+                                return( 
+                                <li>
+                                   {receita.nome}
+                                </li>
+                                )
+                            })
+                            }
                         </ul>
                     </div>
                 </div>
@@ -62,14 +71,22 @@ class ReceitasRapidas extends Component {
                 <div className="background_receitas">
                     <div className="lista_receitas">
                         <ul className={"receitas_rapidas " + (this.state.receitasSalgadas ? 'visivel' : 'escondido')}>
-                            <li>CACHORRO</li>
-                            <li>GATO</li>
-                            <li>PORCO</li>
-                            <li>VACA</li>
+                        {
+                            listaReceitasSalgadas.map(function (receita) {
+                                return( 
+                                <li>
+                                   {receita.nome}
+                                </li>
+                                )
+                            })
+                            }
+                        
                         </ul>
                     </div>
                 </div>
             </section>
+          </ScrollableAnchor>
+        
         )
     }
 }

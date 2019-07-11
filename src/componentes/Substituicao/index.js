@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import './substituicao.scss';
 import ovo from '../../assets/ovo.jpg'
 import leite from '../../assets/leite.jpg'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 class Substituicao extends Component {
     constructor(props) {
@@ -31,8 +32,9 @@ class Substituicao extends Component {
 
     render(){
         return(
-            <section className="container substitutos">
-                <h1 className="box">Substituições</h1>
+            <ScrollableAnchor id={'substituicoes'}>
+              <section className="container substitutos">
+                    <h1 className="box">Substituições</h1>
                 <div className="thumbnail-wrapper">
                     <button onClick={this.mostraListaOvos}>+</button>
                     <img src={ovo} alt="foto de um ovo quebrado"/>
@@ -46,7 +48,7 @@ class Substituicao extends Component {
                 <div className="background_receitas">
                     <div className="lista_receitas">
                         <ul className={"substitutos_leite_ovo " + (this.state.substitutosOvoVisivel ? 'visivel' : 'escondido')}>
-                        <h4>Substituições de ovo</h4>
+                            <h4>Substituições de ovo</h4>
                             <li>Linhaça</li>
                             <li>Agar-agar</li>
                             <li>Chia</li>
@@ -75,6 +77,8 @@ class Substituicao extends Component {
                     </div>
                 </div>
             </section>
+          </ScrollableAnchor>
+          
         )
     }
 }

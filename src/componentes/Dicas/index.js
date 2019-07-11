@@ -17,12 +17,11 @@ class Dicas extends Component {
                     <h2>Dicas</h2>
                     <p>Documentarios sobre o tema</p>
                 </div>
-        
-                <div class="documentary zoom">
-                    <img src={food} alt=""/>
-                    <img src={cowspircy} alt=""/>
-                    <img src={okja} alt=""/>
-                    <img src={health} alt=""/>
+                    <div class="documentary zoom">
+                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={food} id="imagem"/></a>
+                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={cowspircy}id="imagem"/></a>
+                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={okja}id="imagem"/></a>
+                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={health}id="imagem"/></a>
                 </div>
             </section>
             </ScrollableAnchor>
