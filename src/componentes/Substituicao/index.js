@@ -48,16 +48,23 @@ class Substituicao extends Component {
                 <div className="background_receitas">
                     <div className="lista_receitas">
                         <ul className={"substitutos_leite_ovo " + (this.state.substitutosOvoVisivel ? 'visivel' : 'escondido')}>
-                            <h4>Substituições de ovo</h4>
-                            <li>Linhaça</li>
-                            <li>Agar-agar</li>
-                            <li>Chia</li>
-                            <li>Polvilho</li>
-                            <li>Aquafaba</li>
-                            <li>Bicarbonato de sódio com vinagre</li>
-                            <li>Refrigerante </li>
-                            <li>Farinha de grão-de-bico</li>
-                            <li>Mistura de trigo e água para empanados</li>
+                            <div className="conteudo_subs">
+                                <div>
+                                    <h4>Substituições de ovo</h4>
+                                </div>
+                                <span className="border"></span>
+                                <div>
+                                    <li>Linhaça</li>
+                                    <li>Agar-agar</li>
+                                    <li>Chia</li>
+                                    <li>Polvilho</li>
+                                    <li>Aquafaba</li>
+                                    <li>Bicarbonato de sódio com vinagre</li>
+                                    <li>Refrigerante </li>
+                                    <li>Farinha de grão-de-bico</li>
+                                    <li>Mistura de trigo e água para empanados</li>
+                                </div>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -66,13 +73,20 @@ class Substituicao extends Component {
                 <div className="background_receitas">
                     <div className="lista_receitas">
                         <ul className={"substitutos_leite_ovo " + (this.state.substitutosLeiteVisivel ? 'visivel' : 'escondido')}>
-                            <h4>Substituições de leite de vaca</h4>
-                            <li>Leite de coco fresco</li>
-                            <li>Leite de aveia</li>
-                            <li>Leite de soja</li>
-                            <li>Leite de arroz</li>
-                            <li>Leite de castanha</li>
-                            <li>Leite de amêndoas</li>
+                        <div className="conteudo_subs">
+                            <div>
+                                <h4>Substituições de leite de vaca</h4>
+                            </div>
+                            <span className="border"></span>
+                            <div className="margin_top">
+                                <li>Leite de coco fresco</li>
+                                <li>Leite de aveia</li>
+                                <li>Leite de soja</li>
+                                <li>Leite de arroz</li>
+                                <li>Leite de castanha</li>
+                                <li>Leite de amêndoas</li>
+                            </div>
+                        </div>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,42 @@
+.nav_bar {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 320px;
+}
+
+.nav_bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 0;
+  font-size: 20px;
+}
+
+.title_box::before {
+  content: '';
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  z-index: -1;
+  background-color: #FFDE00;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  margin: o auto;
+  left: 42%;
+}
+
+:hover:before {
+  width: 500px;
+}
+
+@media (max-width: 960px) {
+  .nav_bar a {
+    padding-left: 20%;
+    font-size: 30px;
+  }
+}
+/*# sourceMappingURL=nav.css.map */

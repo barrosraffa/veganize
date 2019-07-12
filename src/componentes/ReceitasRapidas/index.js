@@ -9,7 +9,12 @@ import listaReceitasSalgadas from "../../listaReceitasApi/listaReceitasSalgadas"
 class ReceitasRapidas extends Component {
     constructor(props) {
         super(props);
-        this.state = { receitasDoces: false };
+        this.state = {  
+            receitasDoces: false, 
+            receitasSalgadas: false,
+            receitaVisivel: false,
+            dadosReceita: {Ingredientes:[]},
+        };
     }
 
     mostraReceitasDoces = () => {
@@ -32,10 +37,26 @@ class ReceitasRapidas extends Component {
         })) 
     }
 
+    fecharReceita = () => {
+        this.setState(state => ({
+            receitaVisivel: false,
+        }))
+    }
+
+        // Essa função mostra a receita clicada, tornando falso em verdadeiro
+    mostraReceitaCompleta = (receita) => {
+        console.log(receita)
+        this.setState(state => ({
+            receitaVisivel: true,
+            dadosReceita: receita,
+        }));
+    }
+
     render(){
         return(
             <ScrollableAnchor id={'receitas'}>
               <section className="container receitas_rapidas">
+                
                 <h2 className="box" >Receitas rápidas</h2>
 
                 <div className="doces_salgadas">
@@ -54,19 +75,38 @@ class ReceitasRapidas extends Component {
                 <div className="background_receitas">
                     <div className="lista_receitas">
                         <ul className={"receitas_rapidas " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>        
-                             {
-                            listaReceitasDoces.map(function (receita) {
+                        {
+                            listaReceitasDoces.map((receita) => {
                                 return( 
-                                <li>
+                                <li onClick={() => this.mostraReceitaCompleta(receita)}>
                                    {receita.nome}
                                 </li>
                                 )
                             })
-                            }
+                        }
                         </ul>
                     </div>
                 </div>
+                <div className={(this.state.receitaVisivel ? 'visivel' : 'escondido')}>        
+                    <h3>{this.state.dadosReceita.nome}</h3>
+                    <p>{this.state.dadosReceita.url}</p>
+                    <p>{this.state.dadosReceita.detalhes}</p>
+        
+                  <ul>       
+                        {
+                             this.state.dadosReceita.Ingredientes.map((ingrediente) => {
+                                 return( 
+                                 <li>
+                                    {ingrediente}
+                                 </li>
+                                 )
+                             })
+                         }
+                     </ul>
+                     <button onClick={this.fecharReceita}>fechar</button>
+                </div>
 
+                    
                 {/* Receitas salgadas */}
                 <div className="background_receitas">
                     <div className="lista_receitas">
@@ -79,7 +119,7 @@ class ReceitasRapidas extends Component {
                                 </li>
                                 )
                             })
-                            }
+                        }
                         
                         </ul>
                     </div>

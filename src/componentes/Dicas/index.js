@@ -12,12 +12,12 @@ class Dicas extends Component {
     render(){
         return(
             <ScrollableAnchor id={'dicas'}>
-                <section>
+                <section className="background_color">
                 <div class=" container dicas">
-                    <h2>Dicas</h2>
+                    <h2 className="title_box">Dicas</h2>
                     <p>Documentarios sobre o tema</p>
                 </div>
-                    <div class="documentary zoom">
+                    <div class="documentary imagem">
                         <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={food} id="imagem"/></a>
                         <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={cowspircy}id="imagem"/></a>
                         <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={okja}id="imagem"/></a>

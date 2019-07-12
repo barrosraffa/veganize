@@ -5,10 +5,10 @@
     width: 100px;
     height: 50px;
     z-index: -1;
-    background-color: #d4c6e6;
+    background-color: #FFDE00;
     transition: all .3s;
     margin: o auto;
-    left: 40%;
+    left: 38%;
 }
 
 :hover:before{
@@ -22,11 +22,17 @@
     
     li {
         list-style-type: none;
+        font-size: 20px;
+        padding: 10px 0;
+        cursor: pointer;
     }
 }
 
+
+
 .background_receitas{
-    background-color: aqua;
+    background-color: #D9D9D9;
+    box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
 }
 
 .lista_receitas {
@@ -72,4 +78,31 @@
     }
 }
 
+button {
+    background-color: #FFDE00;
+    border-color: transparent;
+    /* border-radius: 4px; */
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+    padding: 23px 34px;
+    position: relative;
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 3px;
+    font-size: 20px;
+}
+
+@media(max-width: 360px){
+    .receitas_rapidas
+    img{
+        height: 300px;
+        max-width: 150px;
+    }
+
+    p {
+        max-width: 150px;
+    }  
+}
 

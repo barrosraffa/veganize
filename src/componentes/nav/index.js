@@ -5,7 +5,7 @@ import './nav.scss'
 class Nav extends Component {
     render(){
         return(
-            <nav class="nav_bar">
+            <nav class="nav_bar title_box">
                 <a href="#">Home</a>
                 <a href="#substituicoes">Substituições</a>
                 <a href="#receitas">Receitas</a>

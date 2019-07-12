@@ -16,6 +16,10 @@
 
 }
 
+button {
+    border: none;
+}
+
 .substitutos{
     h1 {
         text-transform: uppercase;
@@ -27,7 +31,7 @@
     }
 
     img {
-        height: 575px;
+        height: 574px;
     }
 }
 
@@ -41,16 +45,51 @@
 }
 
     .background_receitas{
-        background-color: aqua;
+        background-color: #262626;
+        box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
     }
 
-    .lista_receitas {
+    // .lista_receitas {
+
+    //     ul {
+    //         margin-left: 30px;
+    //     }
+    // }
+
+    .conteudo_subs{
+        display: flex;
+        margin-left: 10%;
 
         ul {
-            margin-left: 30px;
+            margin: 0 10%;
         }
-    
+
+        h4 {
+            font-size: 27px;
+            text-transform: uppercase;
+            margin-top: 27%;
+            width: 400px;
+        }
+
+        li {
+            font-size: 20px;
+            margin: 2% 0px;
+            margin-left: 10%;
+        }
     }
+
+    .border {
+        width: 10px;
+        height: 259px;
+        background-color: #829dad;
+        display: block;
+    }
+
+    .margin_top {
+        margin-top: 5%;
+        margin-left: 2%;
+    }
+
     
     .escondido{
         display: none;
@@ -72,4 +111,29 @@
         background: none;
         border: none;
         cursor: pointer;
+    }
+
+    @media(max-width: 360px){
+        .substitutos img {
+            height: 828px;
+        }
+    }
+    
+    
+    @media(min-width: 960px) and (max-width:1001px){
+        .substitutos img {
+            max-height: 479px;
+        }
+    }
+    
+    @media(min-width: 961px) and (max-width: 1073px){
+        .substitutos img {
+            max-height: 400px;
+        }
+    }
+    
+    @media(min-width:1074px)and (max-width: 1183px) {
+        .substitutos img {
+            max-height: 429px;
+        }
     }

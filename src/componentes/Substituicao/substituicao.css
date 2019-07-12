@@ -18,6 +18,10 @@
   width: 500px;
 }
 
+button {
+  border: none;
+}
+
 .substitutos h1 {
   text-transform: uppercase;
   text-align: center;
@@ -27,7 +31,7 @@
 }
 
 .substitutos img {
-  height: 575px;
+  height: 574px;
 }
 
 .substitutos_leite_ovo {
@@ -40,11 +44,45 @@
 }
 
 .background_receitas {
-  background-color: aqua;
+  background-color: #262626;
+  -webkit-box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
+          box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
 }
 
-.lista_receitas ul {
-  margin-left: 30px;
+.conteudo_subs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+}
+
+.conteudo_subs ul {
+  margin: 0 10%;
+}
+
+.conteudo_subs h4 {
+  font-size: 27px;
+  text-transform: uppercase;
+  margin-top: 27%;
+  width: 400px;
+}
+
+.conteudo_subs li {
+  font-size: 20px;
+  margin: 2% 0px;
+  margin-left: 10%;
+}
+
+.border {
+  width: 10px;
+  height: 259px;
+  background-color: #829dad;
+  display: block;
+}
+
+.margin_top {
+  margin-top: 5%;
+  margin-left: 2%;
 }
 
 .escondido {
@@ -67,5 +105,29 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 360px) {
+  .substitutos img {
+    height: 828px;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1001px) {
+  .substitutos img {
+    max-height: 479px;
+  }
+}
+
+@media (min-width: 961px) and (max-width: 1073px) {
+  .substitutos img {
+    max-height: 400px;
+  }
+}
+
+@media (min-width: 1074px) and (max-width: 1183px) {
+  .substitutos img {
+    max-height: 429px;
+  }
 }
 /*# sourceMappingURL=substituicao.css.map */
