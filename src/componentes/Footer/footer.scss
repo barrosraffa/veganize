@@ -9,7 +9,6 @@ footer h3 {
     color: #ffffff;
 }
 
-
 .col {
     text-align: center;
 
@@ -46,5 +45,11 @@ footer h3 {
         p{
             padding: 20px;
         }
+    }
+}
+
+@media(min-width: 320px) and (max-width: 374px){
+    .fdb-block {
+        width: 376px;
     }
 }

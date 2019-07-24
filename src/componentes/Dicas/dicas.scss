@@ -54,7 +54,6 @@
     }
 }
 
-
 @media(min-width: 1083px){
 
     .dicas p{
@@ -196,26 +195,9 @@
     }
 
 }
-// .background_color{
-//     background: rgba(217, 217, 217, 0.137);
-//     padding: 3% 0px;
-//     box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
-// } 
 
-// .title_box::before {
-//     content: '';
-//     display: inline-flex;
-//     position: absolute;
-//     width: 100px;
-//     height: 50px;
-//     z-index: -1;
-//     background-color: #FFDE00;
-//     transition: all .3s;
-//     margin: o auto;
-//     left: 42%;
-// }
-
-// :hover:before{
-//     width: 500px;
-
-// }
+@media(min-width: 320px) and (max-width: 374px){
+    .background_color {
+        width: 376px;
+    }
+}

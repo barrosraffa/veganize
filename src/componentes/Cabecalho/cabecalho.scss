@@ -7,6 +7,12 @@
     width: 100%;
 }
 
+@media(min-width: 320px) and (max-width: 374px){
+    .cabecalho {
+      width: 375px;
+    }
+}
+
 @media (min-width: 375px){  
 }
 
@@ -21,10 +27,5 @@
         width: 100%;  
         // width: 200px;
       } 
-
-      .nav_bar a {
-        padding-left: 28vh;
-        font-size: 30px;
-      }
 }
 

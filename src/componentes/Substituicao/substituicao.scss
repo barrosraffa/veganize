@@ -146,7 +146,7 @@ button {
     .substitutos img {
         max-height: 500px;
         max-width: 100%;
-        display: block;
+        
      }
 
      .substituicoes_ovo_leite{
@@ -173,6 +173,10 @@ button {
             width: 0px;
         }
     }
+    .thumbnail-wrapper {
+        display: block;
+        text-align: center;
+    }
 }
 
 @media(min-width: 601px) and (max-width: 768px){
@@ -193,8 +197,8 @@ button {
         margin-top: 1px;
     }
 
-    // .lista_receitas ul {
-    //    margin-left: 100px; 
-    //    line-height: 1.2;
-    // }
+    .thumbnail-wrapper {
+        display: block;
+        text-align: center;
+    }
 }
