@@ -1,5 +1,5 @@
 .cabecalho {
-    background-image: url("../../assets/fundo-cabecalho.jpg");
+    background-image: url("../../assets/menores/background_Easy-Resize.com.jpg");
     background-size: cover;
     height: 920px;
     margin-top: -550px;
@@ -16,10 +16,15 @@
     } 
 }  
 
-@media(min-width: 601px) and (max-width: 765px){
+@media(min-width: 601px) and (max-width: 768px){
     .cabecalho{
         width: 100%;  
         // width: 200px;
       } 
+
+      .nav_bar a {
+        padding-left: 28vh;
+        font-size: 30px;
+      }
 }
 

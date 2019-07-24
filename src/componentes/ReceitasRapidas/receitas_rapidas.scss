@@ -89,12 +89,26 @@ button {
     font-size: 20px;
 }
 
+@media(min-width: 320px) and (max-width: 374px){
+    .doces_salgadas{
+        display: block;
+        background: white;
+        padding: 6px 0;
+       
+        div {
+            display: block;
+        }
+    }
+}
 @media(max-width: 375px){
     .doces_salgadas{
         display: block;
         background: white;
         padding: 56px 0;
        
+        div {
+            display: block;
+        }
     }
     .receitas_rapidas img {
         max-width: 340px;
@@ -139,12 +153,14 @@ button {
     .background_receitas {
         box-shadow: none;
         background: white;
+        display: block;
     }
 
     .lista_receitas ul {
         margin-left: 0;
         box-shadow: 24px 17px 48px #888;
         text-align: center;
+        background: white;
     }
 
     .lista_receitas li:hover {
@@ -166,6 +182,10 @@ button {
         display: block;
         background-color: white;
         padding: 56px 0;
+
+        div {
+            display: block;
+        }
     }
     .doces_salgadas p {
         margin: 0;
@@ -196,6 +216,10 @@ button {
         display: block;
         background-color: white;
         padding: 56px 0;
+
+        div {
+            display: block;
+        }
     }
     .doces_salgadas p {
         margin: 0;
@@ -214,7 +238,7 @@ button {
     }
 }
 
-@media(min-width: 601px) and (max-width: 765px){
+@media(min-width: 601px) and (max-width: 768px){
     .doces_salgadas p {
         color: white;
     }
