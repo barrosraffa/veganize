@@ -1,21 +1,3 @@
-.box::before {
-    content: '';
-    display: inline-flex;
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    z-index: -1;
-    background-color: #d4c6e6;
-    transition: all .3s;
-    margin: o auto;
-    left: 40%;
-}
-
-:hover:before{
-    width: 500px;
-
-}
-
 button {
     border: none;
 }
@@ -31,8 +13,13 @@ button {
     }
 
     img {
-        height: 574px;
+        height: 480px;
     }
+}
+
+.substituicoes_ovo_leite{
+    width: 962px;
+    margin: 0 auto;
 }
 
 .substitutos_leite_ovo{
@@ -44,96 +31,165 @@ button {
     }
 }
 
-    .background_receitas{
-        background-color: #262626;
-        box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
+
+.conteudo_subs{
+    display: flex;
+    margin-left: 10%;
+
+    ul {
+        margin: 0 10%;
     }
 
-    // .lista_receitas {
+    h4 {
+        font-size: 27px;
+        text-transform: uppercase;
+        margin-top: 27%;
+        width: 400px;
+    }
 
-    //     ul {
-    //         margin-left: 30px;
-    //     }
-    // }
-
-    .conteudo_subs{
-        display: flex;
+    li {
+        font-size: 20px;
+        margin: 2% 0px;
         margin-left: 10%;
-
-        ul {
-            margin: 0 10%;
-        }
-
-        h4 {
-            font-size: 27px;
-            text-transform: uppercase;
-            margin-top: 27%;
-            width: 400px;
-        }
-
-        li {
-            font-size: 20px;
-            margin: 2% 0px;
-            margin-left: 10%;
-        }
     }
+}
 
-    .border {
-        width: 10px;
-        height: 259px;
-        background-color: #829dad;
+.border {
+    width: 10px;
+    height: 259px;
+    background-color: #829dad;
+    display: block;
+}
+
+.margin_top {
+    margin-top: 5%;
+    margin-left: 2%;
+}
+
+.escondido{
+    display: none;
+}
+
+.thumbnail-wrapper {
+    display:inline-block;
+    position:relative;
+}
+.thumbnail-wrapper button {
+    position:absolute;
+    top:50%;
+    left:50%;
+    -webkit-transform:translate3d(-50%, -50%, 0);
+    -moz-transform:translate3d(-50%, -50%, 0);
+    transform:translate3d(-50%, -50%, 0);
+    font-size: 100px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media(max-width: 375px){
+
+    .conteudo_subs {
+        margin-left: 0;
+    }
+    .thumbnail-wrapper{
         display: block;
     }
 
-    .margin_top {
-        margin-top: 5%;
-        margin-left: 2%;
+    .substitutos{
+        h1 {
+            text-align: left;
+            padding-left: 50px;
+        }
+
+        img{
+            max-width: 375px;
+            max-height: 375px;
+        }
+    }
+   
+    button {
+        text-align: center;
     }
 
+    .substitutos_leite_ovo{
+        h4 {
+            font-size: 15px;
+        }
+    }
+}
+
+@media(min-width: 376px) and (max-width: 414px){
+   
+    .substituicoes_ovo_leite{
+        width: 100%;
+    }
+    .substitutos img {
+       max-height: 375px;
+       max-width: 375px;
+    }
+    .substitutos h1 {
+        text-align: center; 
+        margin: 85px 0;
     
-    .escondido{
-        display: none;
+    }
+}
+
+@media(min-width: 415px) and (max-width: 600px){
+    .substitutos img {
+        max-height: 500px;
+        max-width: 100%;
+        display: block;
+     }
+
+     .substituicoes_ovo_leite{
+        width: 100%;
     }
 
-    .thumbnail-wrapper {
-        display:inline-block;
-        position:relative;
+    .conteudo_subs {
+        display: block;
+
+        li {
+            margin: 0;
+            padding: 10px 0;
+
+        }
+        h4 {
+            padding: 0;
+            width: 300px;
+            margin: 0 auto;
+            padding-bottom: 10px;
+        }
+        .border{
+            padding: 0;
+            height: 0px;
+            width: 0px;
+        }
     }
-    .thumbnail-wrapper button {
-        position:absolute;
-        top:50%;
-        left:50%;
-        -webkit-transform:translate3d(-50%, -50%, 0);
-        -moz-transform:translate3d(-50%, -50%, 0);
-        transform:translate3d(-50%, -50%, 0);
-        font-size: 100px;
-        color: white;
-        background: none;
-        border: none;
-        cursor: pointer;
+}
+
+@media(min-width: 601px) and (max-width: 765px){
+    .substituicoes_ovo_leite {
+        width: 100%;
+        margin: 0 auto;
     }
 
-    @media(max-width: 360px){
-        .substitutos img {
-            height: 828px;
-        }
+    .substitutos img {
+        max-height: 300px;
     }
-    
-    
-    @media(min-width: 960px) and (max-width:1001px){
-        .substitutos img {
-            max-height: 479px;
-        }
+
+    .conteudo_subs h4 {
+        width: 248px;
     }
-    
-    @media(min-width: 961px) and (max-width: 1073px){
-        .substitutos img {
-            max-height: 400px;
-        }
+
+    .lista_receitas ul {
+        margin-top: 1px;
     }
-    
-    @media(min-width:1074px)and (max-width: 1183px) {
-        .substitutos img {
-            max-height: 429px;
-        }
-    }
+
+    // .lista_receitas ul {
+    //    margin-left: 100px; 
+    //    line-height: 1.2;
+    // }
+}

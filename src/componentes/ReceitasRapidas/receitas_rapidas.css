@@ -94,14 +94,13 @@ button {
   font-size: 20px;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 375px) {
+  .doces_salgadas {
+    display: block;
+  }
   .receitas_rapidas
 img {
-    height: 300px;
-    max-width: 150px;
-  }
-  p {
-    max-width: 150px;
+    max-width: 375px;
   }
 }
 /*# sourceMappingURL=receitas_rapidas.css.map */

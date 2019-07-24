@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import './receitas_rapidas.scss';
-import salgadas from '../../assets/salgadas.jpg';
+import salgadas from '../../assets/menores/salgada-menor.jpg'
 import doces from '../../assets/doces.jpg';
-import ScrollableAnchor from 'react-scrollable-anchor'
-import listaReceitasDoces from "../../listaReceitasApi/listaReceitasDoces"
-import listaReceitasSalgadas from "../../listaReceitasApi/listaReceitasSalgadas"
+import ScrollableAnchor from 'react-scrollable-anchor';
+import listaReceitasDoces from "../../listaReceitasApi/listaReceitasDoces";
+import listaReceitasSalgadas from "../../listaReceitasApi/listaReceitasSalgadas";
 
 class ReceitasRapidas extends Component {
     constructor(props) {
@@ -58,35 +58,39 @@ class ReceitasRapidas extends Component {
               <section className="container receitas_rapidas">
                 
                 <h2 className="box" >Receitas rápidas</h2>
-
+            
                 <div className="doces_salgadas">
-                    <img src={doces} alt=""/>
-                    <div>
-                        <p onClick={this.mostraReceitasDoces}>Doces</p>
+                    <div className="background_receitas">
+                        <div className="p_receitas">
+                            <p onClick={this.mostraReceitasDoces}>Doces</p>
+                        </div>
+                        <img src={doces} alt=""/>
+                        
+                        
+                    
+                        <div>
+                            <p onClick={this.mostraReceitasSalgadas}>Salgadas</p>
+                        </div>
+                        <img src={salgadas} alt=""/>
                     </div>
-
-                    <img src={salgadas} alt=""/>
-                    <div>
-                        <p onClick={this.mostraReceitasSalgadas}>Salgadas</p>
-                    </div>
+                
                 </div>
-
+                
                 {/* Receitas doces */}
-                <div className="background_receitas">
-                    <div className="lista_receitas">
-                        <ul className={"receitas_rapidas " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>        
-                        {
-                            listaReceitasDoces.map((receita) => {
-                                return( 
-                                <li onClick={() => this.mostraReceitaCompleta(receita)}>
-                                   {receita.nome}
-                                </li>
-                                )
-                            })
-                        }
-                        </ul>
-                    </div>
+                <div className="lista_receitas">
+                    <ul className={"receitas_rapidas " + (this.state.receitasDoces ? 'visivel' : 'escondido')}>        
+                    {
+                        listaReceitasDoces.map((receita) => {
+                            return( 
+                            <li onClick={() => this.mostraReceitaCompleta(receita)}>
+                            {receita.nome}
+                            </li>
+                            )
+                        })
+                    }
+                    </ul>
                 </div>
+
                 <div className={(this.state.receitaVisivel ? 'visivel' : 'escondido')}>        
                     <h3>{this.state.dadosReceita.nome}</h3>
                     <p>{this.state.dadosReceita.url}</p>

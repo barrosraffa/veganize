@@ -33,10 +33,13 @@
   width: 500px;
 }
 
-@media (max-width: 960px) {
-  .nav_bar a {
+@media (max-width: 375px) {
+  .nav_bar {
+    margin-top: 100px;
+  }
+  a {
     padding-left: 20%;
-    font-size: 30px;
+    font-size: 90px;
   }
 }
 /*# sourceMappingURL=nav.css.map */

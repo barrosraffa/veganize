@@ -107,27 +107,19 @@ button {
   cursor: pointer;
 }
 
-@media (max-width: 360px) {
-  .substitutos img {
-    height: 828px;
+@media (max-width: 375px) {
+  .container {
+    width: 375px;
   }
-}
-
-@media (min-width: 960px) and (max-width: 1001px) {
-  .substitutos img {
-    max-height: 479px;
+  .thumbnail-wrapper {
+    display: block;
   }
-}
-
-@media (min-width: 961px) and (max-width: 1073px) {
-  .substitutos img {
-    max-height: 400px;
+  .substitutos h1 {
+    text-align: left;
+    padding-left: 50px;
   }
-}
-
-@media (min-width: 1074px) and (max-width: 1183px) {
-  .substitutos img {
-    max-height: 429px;
+  img {
+    height: 374px;
   }
 }
 /*# sourceMappingURL=substituicao.css.map */

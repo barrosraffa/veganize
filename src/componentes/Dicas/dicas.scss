@@ -1,6 +1,5 @@
 .documentary {
     display: flex;
-    width: 60%;
     margin: 0 auto;
     margin-top: 7%;
 
@@ -19,72 +18,204 @@
       }
 }
 
-
-@media(max-width: 1198px){
-        .documentary img {
-            width: 200px;
-            padding: 0 10px;
-            margin: 0 auto;
-    }
-}
-
-@media(max-width: 960px){
-    .documentary img {
-        width: 150px;
-        padding: 0 10px;
-        margin: auto;  
-    }
-}
-
-@media(max-width: 1083px){
-    .documentary img {
-        width: 150px;
-        padding: 0 10px;
-        margin: auto;  
-    }
-}
-
-
-.dicas {
-
-        h2 {
-        margin: 3% 0;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 35px;
-        cursor: pointer;
-        }
-
-        p {
-            text-align: center;
-            text-transform: uppercase;
-        }
-}
-
-.title_box::before {
-    content: '';
-    display: inline-flex;
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    z-index: -1;
-    background-color: #FFDE00;
-    transition: all .3s;
-    margin: o auto;
-    left: 42%;
-}
-
-:hover:before{
-    width: 500px;
-
-}
-
-.background_color{
-    background: #D9D9D9;
-    padding: 3% 0px;
-    box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
-}
-
 .zoom {
     overflow: hidden;
 }
+
+.background_color {
+    padding-bottom: 46px;
+    color: black;
+    box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.75);
+}
+
+.dicas {
+
+    h2 {
+    
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 35px;
+    cursor: pointer;
+    padding-top: 30px;
+    }
+
+    p {
+        text-align: center;
+        text-transform: uppercase;
+        padding-bottom: 10px;
+    }
+}
+
+@media(max-width: 1198px){
+    .documentary img {
+        width: 200px;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+}
+
+
+@media(min-width: 1083px){
+
+    .dicas p{
+        padding: 20px 0;
+    }
+
+    .documentary{
+        margin: 0 auto;
+        width: 830px;
+    }
+    .documentary img {
+        width: 150px;
+        padding: 0 10px;
+        margin: auto;  
+    }
+}
+
+@media(min-width: 1030px){
+    .documentary img {
+        width: 188px;
+    }
+}
+
+@media(max-width: 1027px){
+    .documentary img {
+        width: 188px;
+    }
+}
+
+@media(min-width: 960px) and (max-width: 988px){
+
+    .documentary img {
+        width: 178px;
+        padding: 0 10px;
+        margin: auto;  
+    }
+}
+
+@media(max-width: 950px){
+    .documentary{
+        margin: 0 auto;
+        // width: 824px;
+    }
+}
+
+@media (max-width: 375px){
+    .documentary{
+       flex-direction: column;
+       padding: 13px 17px;
+       box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
+       background-color: #E8E7E6;
+    }
+    
+    img{
+        padding: 0;
+    }
+
+    .documentary a:hover {
+        transform: none;
+    }
+
+    a{
+        padding-left: 70px;
+    }
+
+    .background_color {
+        background: none;
+    }
+
+    .dicas {
+        h2{
+            transition: none;
+            content: none;
+        }
+
+        .title_box::before {
+            transition: none;
+            content: none;
+        }
+
+        p{
+            padding-bottom: 22px;
+        }
+        
+    }
+}
+
+@media(min-width: 376px) and (max-width: 414px){
+    .documentary{
+        flex-direction: column;
+        padding: 13px 17px;
+        box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
+        background-color: #E8E7E6;
+        align-items: center;
+     }
+
+     .background_color {
+         padding: 0;
+     }
+}
+
+@media(min-width: 415px) and (max-width: 600px){
+    .documentary{
+        flex-direction: column;
+        padding: 13px 17px;
+        box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
+        background-color: #E8E7E6;
+        align-items: center;
+     }
+
+     .background_color {
+         padding: 0;
+     }
+}
+
+@media(min-width: 601px) and (max-width: 765px){
+
+    .doces_salgadas {
+        div {
+            background: #5C5C5C;
+        }
+    }
+
+    .dicas h2 {
+        padding: 0;
+    }
+    .background_color{
+        background-color: white;
+        padding: 69px 0;
+    }
+    .documentary {
+        margin: 0 auto;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 130px;
+        }
+    }
+
+}
+// .background_color{
+//     background: rgba(217, 217, 217, 0.137);
+//     padding: 3% 0px;
+//     box-shadow: 10px 15px 35px -5px rgba(0, 0, 0, 0.25);
+// } 
+
+// .title_box::before {
+//     content: '';
+//     display: inline-flex;
+//     position: absolute;
+//     width: 100px;
+//     height: 50px;
+//     z-index: -1;
+//     background-color: #FFDE00;
+//     transition: all .3s;
+//     margin: o auto;
+//     left: 42%;
+// }
+
+// :hover:before{
+//     width: 500px;
+
+// }

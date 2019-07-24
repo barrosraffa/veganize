@@ -1,10 +1,32 @@
 footer h3 {
   text-align: center;
+  font-weight: 200;
 }
 
 .background {
   background-color: #444444;
   padding: 5% 0;
   color: #ffffff;
+}
+
+.col {
+  text-align: center;
+}
+
+.col a {
+  content: "\f09a";
+  color: #FFDE00;
+  font-size: 30px;
+  padding: 0 5px;
+}
+
+.fdb-block {
+  margin: 6% 0;
+}
+
+@media (max-width: 375px) {
+  .footer h3 {
+    height: 860px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

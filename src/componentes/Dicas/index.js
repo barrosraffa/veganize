@@ -13,15 +13,17 @@ class Dicas extends Component {
         return(
             <ScrollableAnchor id={'dicas'}>
                 <section className="background_color">
-                <div class=" container dicas">
-                    <h2 className="title_box">Dicas</h2>
-                    <p>Documentarios sobre o tema</p>
-                </div>
-                    <div class="documentary imagem">
-                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={food} id="imagem"/></a>
-                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={cowspircy}id="imagem"/></a>
-                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={okja}id="imagem"/></a>
-                        <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={health}id="imagem"/></a>
+                <div>
+                    <div class="dicas">
+                        <h2 className="title_box">Dicas</h2>
+                        <p>Documentarios sobre o tema</p>
+                    </div>
+                        <div class="documentary imagem">
+                            <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={food} id="imagem"/></a>
+                            <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={cowspircy}id="imagem"/></a>
+                            <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={okja}id="imagem"/></a>
+                            <a href="https://www.youtube.com/watch?v=O9fbkoX_Rc0" onclick="evento()"><img src={health}id="imagem"/></a>
+                    </div>
                 </div>
             </section>
             </ScrollableAnchor>
