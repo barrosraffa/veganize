@@ -98,6 +98,10 @@ button {
 
     .conteudo_subs {
         margin-left: 0;
+
+        li {
+            padding: 7px 0;
+        }
     }
     .thumbnail-wrapper{
         display: block;
@@ -107,6 +111,10 @@ button {
         h1 {
             text-align: left;
             padding-left: 50px;
+        }
+
+        h4 {
+            margin-top: 0;
         }
 
         img{
@@ -121,12 +129,22 @@ button {
 
     .substitutos_leite_ovo{
         h4 {
-            font-size: 15px;
+            font-size: 20px;
+            text-align: center;
+            width: 332px;
         }
     }
 }
 
 @media(min-width: 376px) and (max-width: 414px){
+    .conteudo_subs{
+        display: block;
+        margin-left: 0;
+
+        li {
+            margin-left: 0;
+        }
+    }
    
     .substituicoes_ovo_leite{
         width: 100%;
@@ -138,7 +156,15 @@ button {
     .substitutos h1 {
         text-align: center; 
         margin: 85px 0;
-    
+    }
+
+    .thumbnail-wrapper {
+        display: block;
+        text-align: center;
+    }
+
+    .border {
+        height: 0;
     }
 }
 

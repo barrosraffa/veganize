@@ -94,6 +94,11 @@ class ReceitasRapidas extends Component {
                 <div className={(this.state.receitaVisivel ? 'visivel' : 'escondido')}>        
                     <h3>{this.state.dadosReceita.nome}</h3>
                     <p>{this.state.dadosReceita.url}</p>
+                    <div className="embed-container"> 
+                    <iframe id="ytplayer" type="text/html"
+                    src="http://www.youtube.com/embed/{this.state.dadosReceita.url}?autoplay=1&origin=http://example.com"
+                    frameborder="0"/>
+                    </div>
                     <p>{this.state.dadosReceita.detalhes}</p>
         
                   <ul>       

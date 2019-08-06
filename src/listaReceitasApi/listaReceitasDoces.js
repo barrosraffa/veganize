@@ -2,7 +2,7 @@ let listaReceitasDoces = [
     {
         id: "Brigadeirão Vegano",
         nome: "Brigadeirão Vegano",
-        url: "https://www.youtube.com/watch?v=oOjMibVjLk4",
+        url: "oOjMibVjLk4",
         detalhes: "serve de 8 a 10 pessoas",
         Ingredientes: [ 
            "1 Litro de Leite vegetal da sua preferência(usei de amêndoas)",
