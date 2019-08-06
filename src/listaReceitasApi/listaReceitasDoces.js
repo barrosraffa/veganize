@@ -18,7 +18,7 @@ let listaReceitasDoces = [
     {
         id: "Pavê Cremoso",
         nome: "Pavê Cremoso",
-        url: "https://www.youtube.com/watch?v=2jYepzLplG0&t=97s",
+        url: "2jYepzLplG0",
         detalhes: "Medida do refratário utilizado no vídeo: 25 cm x 15 cm ",
         Ingredientes: [ 
            "Creme",
@@ -46,7 +46,7 @@ let listaReceitasDoces = [
     {
         id: "Mousse de Chocolate",
         nome: "Mousse de Chocolate",
-        url: "https://www.youtube.com/watch?v=kH2RnOs1_4o&t=2s",
+        url: "kH2RnOs1_4o",
         detalhes: "serve de 8 a 10 pessoas",
         Ingredientes: [ 
                 "300g Chocolate meio amargo ou amargo",
@@ -60,7 +60,7 @@ let listaReceitasDoces = [
     {
         id: "Bolo fofo de Laranja com Calda de caramelo",
         nome: "Bolo fofo de Laranja com Calda de caramelo",
-        url: "https://www.youtube.com/watch?v=TdDnh_O1AwY",
+        url: "TdDnh_O1AwY",
         detalhes: [
                 "Capacidade da xícara: 200ml",
                 "Temperatura do forno: 180ºC",
@@ -82,7 +82,7 @@ let listaReceitasDoces = [
     {
         id: "Bolo de Chocolate com Brigadeiro",
         nome: "Bolo de Chocolate com Brigadeiro",
-        url: "https://www.youtube.com/watch?v=0bADSMyhOhs",
+        url: "0bADSMyhOhs",
         detalhes: [
                 "Capacidade da xícara: 200ml",
                 "Temperatura do forno: 180ºC",
